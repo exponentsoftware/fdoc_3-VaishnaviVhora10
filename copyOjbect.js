@@ -42,3 +42,17 @@ const newStudent = {
     }
 };
 console.log(newStudent);
+
+var studentSize = Object.keys(student).length;              //a
+console.log(studentSize)
+
+var studentValueSize = Object.values(student).length;       //b
+console.log(studentValueSize)
+
+var skillSize = Object.keys(student.skills).length;         //c
+console.log(skillSize)
+
+console.log(student.hasOwnProperty('graphicDesign'));       //d
+
+for (var property in student) {
+    console.log(property,":",student[property]);}           //e
